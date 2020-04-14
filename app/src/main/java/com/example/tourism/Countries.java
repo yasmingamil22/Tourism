@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.tourism.R;
+
 public class Countries extends AppCompatActivity {
 
     @Override

@@ -5,35 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlaceDetails"
-    android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/title"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egyptian pyramids"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"/>
+</LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#fff"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="#090808">
 
-
-        >
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_arrow_back_black_24dp"
-            android:layout_margin="15dp"/>
-        <TextView
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Travel"
-            android:textSize="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/colorAccent"/>
+            android:text="Detail"
+            android:id="@+id/detail"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location" />
 
 
+    </com.google.android.material.tabs.TabLayout>
 
-    </LinearLayout>
+
     <ViewFlipper
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/v_flipper"/>
+        android:id="@+id/v_flipper"
+        android:drawingCacheQuality="high"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"/>
 </LinearLayout>

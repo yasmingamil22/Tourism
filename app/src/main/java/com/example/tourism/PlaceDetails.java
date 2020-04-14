@@ -1,13 +1,18 @@
 package com.example.tourism;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class PlaceDetails extends AppCompatActivity {
     ViewFlipper flipper;
+    ViewPager viewPager;
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +23,9 @@ public class PlaceDetails extends AppCompatActivity {
             fipperImages(image);
 
         }
+        viewPager = findViewById(R.id.view_pager);
+        tabLayout = findViewById(R.id.tab);
+tabLayout.setupWithViewPager(viewPager);
     }
     public void fipperImages (int image){
         ImageView imageView = new ImageView(this);
@@ -29,4 +37,5 @@ public class PlaceDetails extends AppCompatActivity {
         flipper.setOutAnimation(this,android.R.anim.slide_out_right);
 
     }
+
 }
