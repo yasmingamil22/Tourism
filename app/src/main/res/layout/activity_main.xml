@@ -13,5 +13,5 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:scaleType="center"
-        android:src="@drawable/splash" />
+        android:src="@drawable/art" />
 </RelativeLayout>
