@@ -18,9 +18,12 @@ RecyclerView Rv;
         setContentView(R.layout.activity_cairo);
         Rv = findViewById(R.id.rv);
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(R.drawable.pyr, "pyramid"));
-        places.add(new Place(R.drawable.aesh, "aesha fahmy"));
+        places.add(new Place(R.drawable.pyr, "pyramids"));
+        places.add(new Place(R.drawable.aesh, "aesha fahmy palace"));
         places.add(new Place(R.drawable.cas, "castle"));
+        places.add(new Place(R.drawable.cairotower, "cairo tower"));
+        places.add(new Place(R.drawable.alhakem, "Al Hakem "));
+
         Cov_adapter  adapter = new Cov_adapter(places);
         RecyclerView.LayoutManager lm= new LinearLayoutManager(this);
         Rv.setHasFixedSize(true);
