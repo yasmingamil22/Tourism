@@ -33,12 +33,7 @@ public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> 
      Place p = places.get(position);
      holder.im_name.setImageResource(p.getImage());
      holder.tv_name.setText(p.getName());
-     holder.ln.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
 
-         }
-     });
     }
 
     @Override
