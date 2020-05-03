@@ -10,25 +10,26 @@
         android:src="@drawable/t7"
         android:scaleType="fitXY"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Travel tips"
-        android:textSize="25dp"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_marginLeft="10dp"
-        android:drawableLeft="@drawable/ic_folder_open_black_24dp"
-        android:drawablePadding="10dp"/>
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_flight_black_24dp"
+        android:drawablePadding="10dp"
+        android:text="Travel tips"
+        android:textColor="#59586f"
+        android:textSize="25dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Favourit"
         android:textSize="25dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#59586f"
         android:layout_marginLeft="10dp"
-        android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+        android:drawableLeft="@drawable/ic_stars_black_24dp"
         android:drawablePadding="10dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         android:layout_marginTop="20dp"
         android:text="Setting"
         android:textSize="25dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#59586f"
         android:layout_marginLeft="10dp"
         android:drawableLeft="@drawable/ic_settings_black_24dp"
         android:drawablePadding="10dp"/>
@@ -46,7 +47,7 @@
         android:layout_marginTop="20dp"
         android:text="Share App"
         android:textSize="25dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#59586f"
         android:layout_marginLeft="10dp"
         android:drawableLeft="@drawable/ic_share_black_24dp"
         android:drawablePadding="10dp"/>

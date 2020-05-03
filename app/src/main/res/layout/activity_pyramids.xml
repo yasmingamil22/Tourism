@@ -26,7 +26,7 @@
         />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="210dp"
         android:id="@+id/tv2"
         android:textSize="17dp"
         android:layout_below="@+id/im1"
@@ -34,8 +34,8 @@
 "
     <Button
         android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_below="@id/tv2"
         android:background="#59586f"
         android:text="hotels"
@@ -43,45 +43,53 @@
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_marginTop="10dp"
-
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:drawableTop="@drawable/ic_hotel_black_24dp"
+        android:layout_marginBottom="5dp"/>
     <Button
     android:id="@+id/btn2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/tv2"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/btn1"
+        android:drawableTop="@drawable/ic_airport_shuttle_black_24dp"
     android:background="#59586f"
     android:text="transport"
     android:textColor="#f4f6f8"
     android:textStyle="bold"
     android:textSize="18dp"
-        android:layout_toRightOf="@+id/btn1"
-        android:layout_margin="10dp"/>
+
+        android:layout_margin="5dp"
+        android:layout_marginLeft="25dp"/>
     <Button
     android:id="@+id/btn3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
     android:layout_below="@id/tv2"
     android:background="#59586f"
-    android:text="locatin"
+    android:text="location"
+
+        android:drawableTop="@drawable/ic_location_on_black_24dp"
     android:textColor="#f4f6f8"
     android:textStyle="bold"
     android:textSize="18dp"
         android:layout_toRightOf="@+id/btn2"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginLeft="10dp"/>
     <Button
     android:id="@+id/btn4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/tv2"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/btn3"
+        android:layout_toRightOf="@+id/btn2"
+        android:drawableTop="@drawable/ic_star_half_black_24dp"
     android:background="#59586f"
     android:text="feedback"
     android:textColor="#f4f6f8"
     android:textStyle="bold"
     android:textSize="18dp"
-        android:layout_toRightOf="@id/btn3"
-        android:layout_margin="10dp"/>
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
 
 
 

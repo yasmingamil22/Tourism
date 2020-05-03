@@ -2,6 +2,7 @@ package com.example.tourism;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,6 +16,7 @@ public class pyramids extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pyramids);
+        Intent intent = getIntent();
         tv1 = findViewById(R.id.tv);
         tv2 = findViewById(R.id.tv2);
         btn1 = findViewById(R.id.btn1);
