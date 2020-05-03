@@ -4,147 +4,243 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#665D82DE"
     tools:context=".Countries">
 
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="120dp"
+        android:text="places"
+        android:textColor="#59586f"
+        android:textStyle="bold"
+        android:textSize="55dp" />
     <androidx.cardview.widget.CardView
         android:id="@+id/card_cairo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tt"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
         >
     <Button
         android:id="@+id/bt_cairo"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:text="Cairo"
         android:textSize="25dp"
-        android:textColor="@color/colorPrimary"
-        android:background="#fff"/>
+        android:textColor="#fff"
+        android:background="#59586f"
+        />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_alexandria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/card_cairo"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/card_cairo">
         <Button
             android:id="@+id/bt_alexandria"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Alexandria"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_hurghada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card_cairo"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_alexandria"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp"
+        >
         <Button
             android:id="@+id/bt_hurghada"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Hurghada"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_theRedSea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         android:layout_below="@+id/card_alexandria"
-        android:layout_toRightOf="@+id/card_hurghada"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+         android:layout_below="@+id/card_hurghada"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        >
         <Button
             android:id="@+id/bt_theRedSea"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="The Red Sea"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_luxor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card_hurghada"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_theRedSea"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        >
         <Button
             android:id="@+id/bt_luxor"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Luxor"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_aswan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card_theRedSea"
-        android:layout_toRightOf="@+id/card_luxor"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_luxor"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp">
         <Button
             android:id="@+id/bt_aswan"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Aswan"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_gona"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_sharmElSheikh"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp">
+        <Button
+            android:id="@+id/bt_gona"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Gona"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="#59586f"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sinai"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_gona"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp">
+
+        <Button
+            android:id="@+id/bt_sinai"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Sinai"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="#59586f"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_fayoum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card_luxor"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_aswan"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp">
         <Button
             android:id="@+id/bt_fayoum"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Fayoum"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_sharmElSheikh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card_luxor"
-        android:layout_toRightOf="@+id/card_fayoum"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_fayoum"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp">
+
         <Button
             android:id="@+id/bt_sharmElSheikh"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:text="Sharm El Sheikh"
             android:textSize="25dp"
-            android:textColor="@color/colorPrimary"
-            android:background="#0000"/>
+            android:textColor="#fff"
+            android:background="#59586f"/>
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_marsamatroh"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_sinai"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp">
+        <Button
+            android:id="@+id/bt_marsa_matroh"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Marsa Matroh"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="#59586f"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_siwa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_marsamatroh"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp">
+
+        <Button
+            android:id="@+id/bt_siwa"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Siwa"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="#59586f"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_giza"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_siwa"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="18dp">
+
+        <Button
+            android:id="@+id/bt_giza"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Giza"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="#59586f"/>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

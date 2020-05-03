@@ -12,27 +12,26 @@
         android:layout_height="wrap_content"
         android:background="#59586f"
         android:fontFamily=""
-        android:text="pyramids"
+        android:text="Cairo tower"
         android:textColor="#F4F6F8"
         android:textSize="40dp"
         android:textStyle="bold" />
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:layout_below="@+id/tv"
         android:id="@+id/im1"
+        android:src="@drawable/ggg"
+        android:layout_marginTop="10dp"
         />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:id="@+id/tv2"
+        android:textSize="17dp"
         android:layout_below="@+id/im1"
-        android:text="
-The pyramids of Egypt fascinated travellers and conquerors in ancient times and continue to inspire wonder in the tourists, mathematicians, and archeologists who visit, explore, measure, and describe them.
-Tombs of early Egyptian kings were bench-shaped mounds called mastabas. Around 2780 B.C., King Djoser's architect, Imhotep, built the first pyramid by placing six mastabas, each smaller than the one beneath, in a stack to form a pyramid rising in steps. This Step Pyramid stands on the west bank of the Nile River at Sakkara near Memphis. Like later pyramids, it contains various rooms and passages, including the burial chamber of the king.
-The transition from the Step Pyramid to a true, smooth-sided pyramid took placed during the reign of King Snefru, founder of the Fourth Dynasty (2680-2560 B.C.). At Medum, a step pyramid was built, then filled in with stone, and covered with a limestone casing. Nearby at Bahshur, construction was begun on a pyramid apparently planned to have smooth sides. About halfway up, however, the angle of incline decreases from over 51 degrees to about 43 degrees, and the sides rise less steeply, causing it to be known as the Bent Pyramid. The change in angle was probably made during construction to give the building more stability. Another great pyramid was built at Dahshur with its sides rising at an angle of somewhat over 43 degrees, resulting in a true, but squat looking pyramid
-"/>
-
+        android:text=" From its 187 meters, the Cairo tower offers the most amazing panoramic views of the Egyptian capital. It is advised to go up to the tower's circular observation deck in the late morning or late afternoon for the clearest views of the city. You'll also find a restaurant at the top of the tower. Occasionally, the restaurant revolves around the tower's main axis. The tower was designed by the Egyptian architect, Naoum Chebib. Its completion took 5 years, from 1956 to 1961. Opening Hours: From 8 am to midnight. Ticket Price(s): 60 EGP, Free for children"/>
+"
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"

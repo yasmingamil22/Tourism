@@ -22,6 +22,6 @@ public class pyramids extends AppCompatActivity {
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
         im1 = findViewById((R.id.im));
-        im1.setImageResource(R.drawable.p);
+
     }
 }

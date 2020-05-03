@@ -18,7 +18,6 @@ RecyclerView Rv;
         setContentView(R.layout.activity_cairo);
         Rv = findViewById(R.id.rv);
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(R.drawable.pyr, "pyramids"));
         places.add(new Place(R.drawable.aesh, "aesha fahmy palace"));
         places.add(new Place(R.drawable.cas, "castle"));
         places.add(new Place(R.drawable.cairotower, "cairo tower"));
