@@ -1,11 +1,9 @@
 package com.example.tourism;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +31,6 @@ public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> 
      Place p = places.get(position);
      holder.im_name.setImageResource(p.getImage());
      holder.tv_name.setText(p.getName());
-
     }
 
     @Override
@@ -44,17 +41,11 @@ public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> 
     class MyViewHolder extends RecyclerView.ViewHolder{
         TextView tv_name;
         ImageView im_name;
-        LinearLayout ln;
-
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_name = itemView.findViewById(R.id.tv);
             im_name = itemView.findViewById(R.id.im);
-            ln =itemView.findViewById(R.id.ln);
-
-
-
         }
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,60 +7,86 @@
     tools:context=".PlaceDetails"
     android:orientation="vertical"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_arrow_back_black_24dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Egyptian pyramids"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="8dp"/>
-</LinearLayout>
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="@color/colorPrimaryDark"
-        app:tabSelectedTextColor="@color/colorPrimaryDark"
-        app:tabTextColor="#090808">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapse"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorAccent"
+            app:title=""
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id="@+id/v_flipper"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detail"
-            android:id="@+id/detail"
-            />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="location" />
+            </androidx.appcompat.widget.Toolbar>
 
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-    </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
-    <ViewFlipper
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/v_flipper"
-        android:drawingCacheQuality="high"/>
-    <androidx.viewpager.widget.ViewPager
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/view_pager"/>
-</LinearLayout>
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+
+
+
+            <TextView
+                android:id="@+id/page_title"
+                android:padding="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="History"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="12dp"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_marginTop="40dp"
+                android:text="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/app_bar_layout"
+
+        app:layout_anchorGravity="bottom|right|end"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

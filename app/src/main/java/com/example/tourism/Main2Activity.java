@@ -17,7 +17,7 @@ import java.util.List;
 public class Main2Activity extends AppCompatActivity {
 ImageView imgForDrawer;
 DrawerLayout drawerLayout;
-Button bt_countries;
+Button btCountries,btMostPop;
     ViewPager viewPager;
     Adapter adapter;
     List<Model> models;
@@ -25,12 +25,20 @@ Button bt_countries;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        bt_countries=findViewById(R.id.bt_countries);
-        bt_countries.setOnClickListener(new View.OnClickListener() {
+        btCountries=findViewById(R.id.bt_countries);
+        btCountries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(Main2Activity.this, Countries.class);
            startActivity(i);
+            }
+        });
+        btMostPop=findViewById(R.id.bt_mostPopular);
+        btMostPop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(Main2Activity.this, Cairo.class);
+                startActivity(i);
             }
         });
         //for navigation drawer
