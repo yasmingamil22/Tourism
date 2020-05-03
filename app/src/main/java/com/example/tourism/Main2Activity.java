@@ -48,13 +48,14 @@ Button bt_countries;
         });
         // this is for moveing the images
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.t1,"Egyptian pyramids"," It is the only one of the Seven Wonders of the Ancient World still in existence."));
-        models.add(new Model(R.drawable.t3,"El Andalos park","One of the rare green areas that people could come across in Cairo "));
-        models.add(new Model(R.drawable.t5,"Japanese Gardens","this park is beautiful, lots of statues and also games "));
-        models.add(new Model(R.drawable.t4,"Family Park","Landscaped garden with a zoo, amusement park, cinema"));
-        models.add(new Model(R.drawable.t7,"Family Park","Landscaped garden with a zoo, amusement park, cinema"));
-        models.add(new Model(R.drawable.t2,"Family Park","Landscaped garden with a zoo, amusement park, cinema"));
-        models.add(new Model(R.drawable.t6,"Family Park","Landscaped garden with a zoo, amusement park, cinema"));
+        models.add(new Model(R.drawable.t1,"Egyptian Pyramids"," It is the only one of the Seven Wonders of the Ancient World still in existence."));
+        models.add(new Model(R.drawable.t5,"St. Catherine Mountain","It is the highest mountain is Sinai "));
+        models.add(new Model(R.drawable.Royal,"The Royal Jewelry Museum","Contains most of the royal jewelry"));
+        models.add(new Model(R.drawable.t4,"Karnak Temple","pharaonic temple in Luxor"));
+        models.add(new Model(R.drawable.opera,"Opera House","you can attend cocerts in it "));
+        models.add(new Model(R.drawable.gon,"Gona","Overlooking the Red Sea"));
+        models.add(new Model(R.drawable.waddy,"Wadi Al Rayan waterfalls","It is a part of nature reseve"));
+
 
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.view_pager);

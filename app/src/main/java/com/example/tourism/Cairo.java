@@ -24,7 +24,7 @@ RecyclerView Rv;
         ArrayList<Place> places = new ArrayList<>();
         places.add(new Place(R.drawable.Alazhar, "Al Azhar"));
         places.add(new Place(R.drawable.manialPalac, "Muhammed Ali Pasha Palace"));
-        places.add(new Place(R.drawable.musse, "The Egyption mussuem"));
+        places.add(new Place(R.drawable.musse, "The Egyption museum"));
         places.add(new Place(R.drawable.aesh, "Aesha Fahmy Palace"));
         places.add(new Place(R.drawable.cas, "Salah El Din Citadel"));
         places.add(new Place(R.drawable.cairotower, "Cairo Tower"));
