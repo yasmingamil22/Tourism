@@ -17,7 +17,13 @@ RecyclerView rec;
         setContentView(R.layout.activity_most_pop);
         rec = findViewById(R.id.rec);
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(R.drawable.pyr, "pyramid"));
+        places.add(new Place(R.drawable.pyr, "Pyramids","El haram"));
+        places.add(new Place(R.drawable.feyla, "Feyla island","Aswan"));
+        places.add(new Place(R.drawable.feyord, "Fjord Bay","Taba"));
+        places.add(new Place(R.drawable.waddy, "Wale vally","Faioum"));
+        places.add(new Place(R.drawable.waddy, "Siwa Palms","Siwa"));
+
+
         CovMostAdapter  adapter = new CovMostAdapter(places,this);
         RecyclerView.LayoutManager lm= new LinearLayoutManager(this);
         rec.setHasFixedSize(true);

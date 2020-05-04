@@ -2,11 +2,20 @@ package com.example.tourism;
 
 public class Place {
     private int image;
-    private String name;
+    private String name ,location;
 
-    public Place(int image, String name) {
+    public Place(int image, String name ,String location) {
         this.image = image;
         this.name = name;
+        this.location =location;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public int getImage() {
