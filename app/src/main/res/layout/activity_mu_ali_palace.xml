@@ -4,40 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CairoTower">
+    tools:context=".MuAliPalace">
 
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/tvm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="#59586f"
         android:fontFamily=""
-        android:text="Cairo tower"
+        android:text="Muhammed Ali Palace"
         android:textColor="#F4F6F8"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textStyle="bold" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_below="@+id/tv"
-        android:id="@+id/im1"
-        android:src="@drawable/cai"
+        android:layout_below="@+id/tvm"
+        android:id="@+id/im1m"
+        android:src="@drawable/mual"
         android:layout_marginTop="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="210dp"
-        android:id="@+id/tv2"
+        android:id="@+id/tv2m"
         android:textSize="17dp"
-        android:layout_below="@+id/im1"
-        android:text=" From its 187 meters, the Cairo tower offers the most amazing panoramic views of the Egyptian capital. It is advised to go up to the tower's circular observation deck in the late morning or late afternoon for the clearest views of the city. You'll also find a restaurant at the top of the tower. Occasionally, the restaurant revolves around the tower's main axis. The tower was designed by the Egyptian architect, Naoum Chebib. Its completion took 5 years, from 1956 to 1961. Opening Hours: From 8 am to midnight. Ticket Price(s): 60 EGP, Free for children"/>
+        android:layout_below="@+id/im1m"
+        android:layout_marginTop="15dp"
+        android:text="The Manial Palace and Museum, is a former Alawiyya dynasty era palace and grounds on Rhoda Island on the Nile. It is located in the Sharia Al-Saray area in the El-Manial district of southern Cairo, Egypt. The palace and estate has been preserved as an Antiquities Council directed historic house museum and estate, reflecting the settings and lifestyle of the late 19th- and early 20th-century Egyptian royal prince and heir apparent. The residence compound, composed of five separate and distinctively styled buildings, is surrounded by Persian gardens within an extensive English Landscape garden estate park, along a small branch of the Nile."/>
     "
     <Button
 
-        android:id="@+id/btn1"
+        android:id="@+id/btn1m"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/tv2"
+        android:layout_below="@id/tv2m"
         android:background="@color/colorPrimaryDark"
         android:text="hotels"
         android:textColor="#f4f6f8"
@@ -48,10 +49,10 @@
         android:drawableTop="@drawable/ic_hotel_black_24dp"
         android:layout_marginBottom="5dp"/>
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btn2m"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/btn1"
+        android:layout_below="@id/btn1m"
         android:drawableTop="@drawable/ic_airport_shuttle_black_24dp"
         android:background="#59586f"
         android:text="transport"
@@ -62,10 +63,10 @@
         android:layout_margin="5dp"
         android:layout_marginLeft="25dp"/>
     <Button
-        android:id="@+id/btn3"
+        android:id="@+id/btn3m"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/tv2"
+        android:layout_below="@id/tv2m"
         android:background="#59586f"
         android:text="location"
 
@@ -73,15 +74,15 @@
         android:textColor="#f4f6f8"
         android:textStyle="bold"
         android:textSize="18dp"
-        android:layout_toRightOf="@+id/btn2"
+        android:layout_toRightOf="@+id/btn2m"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"/>
     <Button
-        android:id="@+id/btn4"
+        android:id="@+id/btn4m"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/btn3"
-        android:layout_toRightOf="@+id/btn2"
+        android:layout_below="@id/btn3m"
+        android:layout_toRightOf="@+id/btn2m"
         android:drawableTop="@drawable/ic_star_half_black_24dp"
         android:background="#59586f"
         android:text="feedback"
