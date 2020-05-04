@@ -13,12 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> {
+public class CovMostAdapter extends RecyclerView.Adapter<CovMostAdapter.MyViewHolder> {
     ArrayList<Place> places;
-Context mContext;
-    public Cov_adapter(ArrayList<Place> places ,Context context) {
+    Context context;
+
+    public CovMostAdapter(ArrayList<Place> places ,Context context) {
         this.places = places;
-        mContext = context;
+        this.context=context;
     }
 
     @NonNull
@@ -37,8 +38,8 @@ Context mContext;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, CairoTower.class);
-                mContext.startActivity(intent);
+                Intent intent = new Intent(context, CairoTower.class);
+                context.startActivity(intent);
             }
         });
     }
@@ -56,7 +57,6 @@ Context mContext;
             super(itemView);
             tv_name = itemView.findViewById(R.id.tv);
             im_name = itemView.findViewById(R.id.im);
-
         }
     }
 

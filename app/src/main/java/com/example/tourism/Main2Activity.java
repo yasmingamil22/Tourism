@@ -8,13 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main2Activity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity  {
 ImageView imgForDrawer;
 DrawerLayout drawerLayout;
 Button btCountries,btMostPop;
@@ -56,18 +57,19 @@ Button btCountries,btMostPop;
         });
         // this is for moveing the images
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.t1,"Egyptian Pyramids"," It is the only one of the Seven Wonders of the Ancient World still in existence."));
+        models.add(new Model(R.drawable.al_ahramat,"Egyptian Pyramids"," It is the only one of the Seven Wonders of the Ancient World still in existence."));
         models.add(new Model(R.drawable.t5,"St. Catherine Mountain","It is the highest mountain is Sinai "));
-        models.add(new Model(R.drawable.Royal,"The Royal Jewelry Museum","Contains most of the royal jewelry"));
+        models.add(new Model(R.drawable.almgohratalmalkia,"The Royal Jewelry Museum","Contains most of the royal jewelry"));
         models.add(new Model(R.drawable.t4,"Karnak Temple","pharaonic temple in Luxor"));
-        models.add(new Model(R.drawable.opera,"Opera House","you can attend cocerts in it "));
-        models.add(new Model(R.drawable.gon,"Gona","Overlooking the Red Sea"));
-        models.add(new Model(R.drawable.waddy,"Wadi Al Rayan waterfalls","It is a part of nature reseve"));
+        models.add(new Model(R.drawable.alobra,"Opera House","you can attend cocerts in it "));
+        models.add(new Model(R.drawable.algona,"Gona","Overlooking the Red Sea"));
+        models.add(new Model(R.drawable.wadyalrayan,"Wadi Al Rayan waterfalls","It is a part of nature reseve"));
 
 
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(adapter);
         viewPager.setPadding(130,0,130,0);
+
     }
 }

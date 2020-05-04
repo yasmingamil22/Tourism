@@ -18,7 +18,7 @@ RecyclerView rec;
         rec = findViewById(R.id.rec);
         ArrayList<Place> places = new ArrayList<>();
         places.add(new Place(R.drawable.pyr, "pyramid"));
-        Cov_adapter  adapter = new Cov_adapter(places,MostPop.this);
+        CovMostAdapter  adapter = new CovMostAdapter(places,this);
         RecyclerView.LayoutManager lm= new LinearLayoutManager(this);
         rec.setHasFixedSize(true);
         rec.setLayoutManager(lm);
