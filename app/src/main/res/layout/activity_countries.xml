@@ -38,7 +38,7 @@
         android:id="@+id/card_alexandria"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
         android:layout_below="@+id/card_cairo">
         <Button
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_alexandria"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="13dp"
         >
         <Button
@@ -74,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
          android:layout_below="@+id/card_hurghada"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="35dp"
         >
         <Button
@@ -92,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_theRedSea"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         >
         <Button
@@ -110,7 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_luxor"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp">
         <Button
             android:id="@+id/bt_aswan"
@@ -127,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_sharmElSheikh"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="13dp">
         <Button
             android:id="@+id/bt_gona"
@@ -144,7 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_gona"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="45dp">
 
         <Button
@@ -161,7 +161,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_aswan"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="13dp">
         <Button
             android:id="@+id/bt_fayoum"
@@ -178,7 +178,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_fayoum"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="45dp">
 
         <Button
@@ -196,7 +196,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_sinai"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="13dp">
         <Button
             android:id="@+id/bt_marsa_matroh"
@@ -213,7 +213,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_marsamatroh"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="45dp">
 
         <Button
@@ -230,7 +230,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@+id/card_siwa"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="18dp">
 
         <Button
