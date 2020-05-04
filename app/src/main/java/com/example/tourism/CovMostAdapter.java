@@ -38,7 +38,7 @@ public class CovMostAdapter extends RecyclerView.Adapter<CovMostAdapter.MyViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, CairoTower.class);
+                Intent intent = new Intent(context, PlaceDetails.class);
                 context.startActivity(intent);
             }
         });

@@ -15,7 +15,7 @@ public class MuAliPalace extends AppCompatActivity {
         Button btn1m, btn2m, btn3m, btn4m;
         ImageView im1m;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activitymu_ali_palace);
+        setContentView(R.layout.activity_mu_ali_palace);
         tv1m = findViewById(R.id.tvm);
         tv2m = findViewById(R.id.tv2m);
         btn1m = findViewById(R.id.btn1m);

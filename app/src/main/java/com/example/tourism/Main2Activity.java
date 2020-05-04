@@ -26,7 +26,7 @@ Button btCountries,btMostPop;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        btCountries=findViewById(R.id.bt_countries);
+        btCountries=findViewById(R.id.bt_allPopular);
         btCountries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
