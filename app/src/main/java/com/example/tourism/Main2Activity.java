@@ -38,7 +38,7 @@ Button btCountries,btMostPop;
         btMostPop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Main2Activity.this, Cairo.class);
+                Intent i=new Intent(Main2Activity.this, MostPop.class);
                 startActivity(i);
             }
         });

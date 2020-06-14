@@ -1,5 +1,6 @@
 package com.example.tourism;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,9 +16,10 @@ import java.util.ArrayList;
 
 public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> {
     ArrayList<Place> places;
-
-    public Cov_adapter(ArrayList<Place> places) {
+Context mContext;
+    public Cov_adapter(ArrayList<Place> places,Context context) {
         this.places = places;
+        mContext = context;
     }
 
     @NonNull
@@ -33,7 +35,14 @@ public class Cov_adapter extends RecyclerView.Adapter<Cov_adapter.MyViewHolder> 
      Place p = places.get(position);
      holder.im_name.setImageResource(p.getImage());
      holder.tv_name.setText(p.getName());
-
+        holder.tv2.setText(p.getLocation());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MuAliPalace.class);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override

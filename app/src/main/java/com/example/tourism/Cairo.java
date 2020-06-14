@@ -30,7 +30,7 @@ RecyclerView Rv;
         places.add(new Place(R.drawable.cairott, "Cairo Tower","El Zamalek"));
         places.add(new Place(R.drawable.mazged_alhakm, "Al Hakem ","El Moe'eez st."));
 
-        Cov_adapter  adapter = new Cov_adapter(places);
+        Cov_adapter  adapter = new Cov_adapter(places,this);
         RecyclerView.LayoutManager lm= new LinearLayoutManager(this);
         Rv.setHasFixedSize(true);
         Rv.setLayoutManager(lm);

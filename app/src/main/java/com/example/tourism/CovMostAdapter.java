@@ -35,10 +35,11 @@ public class CovMostAdapter extends RecyclerView.Adapter<CovMostAdapter.MyViewHo
      Place p = places.get(position);
      holder.im_name.setImageResource(p.getImage());
      holder.tv_name.setText(p.getName());
+        holder.tv2.setText(p.getLocation());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, PlaceDetails.class);
+                Intent intent = new Intent(context, CairoTower.class);
                 context.startActivity(intent);
             }
         });
@@ -50,13 +51,14 @@ public class CovMostAdapter extends RecyclerView.Adapter<CovMostAdapter.MyViewHo
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView tv_name;
+        TextView tv_name,tv2;
         ImageView im_name;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_name = itemView.findViewById(R.id.tv);
             im_name = itemView.findViewById(R.id.im);
+            tv2 = itemView.findViewById(R.id.tv2);
         }
     }
 

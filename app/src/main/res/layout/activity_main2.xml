@@ -49,53 +49,48 @@
             android:layout_centerInParent="true"
             android:overScrollMode="never"
             android:clipToPadding="false"
+            android:padding="10dp"
             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_most"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/photo"
-                android:layout_margin="25dp"
-                android:layout_marginLeft="5dp"
-                >
+            android:layout_marginTop="80dp"
+            android:padding="10dp"
+            android:weightSum="2"
+>
+            <Button
+                android:id="@+id/bt_mostPopular"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="Most Popular"
+                android:drawableTop="@drawable/ic_star_half_black_24dp"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:layout_marginTop="10dp"
 
-                <Button
-                    android:id="@+id/bt_mostPopular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Most Popular Places"
-                    android:drawableTop="@drawable/ic_group_black_24dp"
-                    android:background="#59586f"
-                    android:textSize="25dp"
-                    android:drawablePadding="2dp"
-                    />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/card_most"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="25dp">
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/bt_allPopular"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="Countries"
+                android:drawableTop="@drawable/ic_location_on_black_24dp"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:textColor="@color/colorAccent"
+                android:drawablePadding="2dp"
+                android:layout_marginTop="10dp"
 
-            </androidx.cardview.widget.CardView>
+                android:layout_marginLeft="10dp"
+                />
         </LinearLayout>
 
-        <Button
-            android:layout_marginLeft="25dp"
-            android:id="@+id/bt_countries"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#59586f"
-            android:drawableTop="@drawable/ic_place_black_24dp"
-            android:drawablePadding="5dp"
-            android:layout_marginTop="15dp"
-            android:text=" All places"
-            android:textSize="25dp" />
+
     </LinearLayout>
 
 
