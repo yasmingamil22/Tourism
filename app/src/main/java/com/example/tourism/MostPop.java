@@ -17,11 +17,11 @@ RecyclerView rec;
         setContentView(R.layout.activity_most_pop);
         rec = findViewById(R.id.rec);
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(R.drawable.pyr, "Pyramids","El haram"));
-        places.add(new Place(R.drawable.feyla, "Feyla island","Aswan"));
-        places.add(new Place(R.drawable.cai, "Cairo Tower","cairo"));
-        places.add(new Place(R.drawable.waddy, "Wale vally","Faioum"));
-        places.add(new Place(R.drawable.waddy, "Siwa Palms","Siwa"));
+        places.add(new Place(R.drawable.t1, "Pyramids","El haram"));
+        places.add(new Place(R.drawable.t5, "Feyla island","Aswan"));
+        places.add(new Place(R.drawable.t4, "Cairo Tower","cairo"));
+        places.add(new Place(R.drawable.t3, "Wale vally","Faioum"));
+        places.add(new Place(R.drawable.t2, "Siwa Palms","Siwa"));
 
 
         CovMostAdapter  adapter = new CovMostAdapter(places,this);

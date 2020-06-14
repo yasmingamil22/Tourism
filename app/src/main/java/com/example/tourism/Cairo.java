@@ -22,13 +22,13 @@ RecyclerView Rv;
         Rv = findViewById(R.id.rv);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(R.drawable.alazher, "Al Azhar","El Darasa"));
-        places.add(new Place(R.drawable.mohamed_ali, "Muhammed Ali Pasha Palace","El Manial"));
-        places.add(new Place(R.drawable.almat7af_almasry, "The Egyption museum","El tahrir"));
-        places.add(new Place(R.drawable.aesh, "Aesha Fahmy Palace","El Zamalek"));
-        places.add(new Place(R.drawable.cas, "Salah El Din Citadel","El Moqatam"));
-        places.add(new Place(R.drawable.cairott, "Cairo Tower","El Zamalek"));
-        places.add(new Place(R.drawable.mazged_alhakm, "Al Hakem ","El Moe'eez st."));
+        places.add(new Place(R.drawable.t1, "Al Azhar","El Darasa"));
+        places.add(new Place(R.drawable.t6, "Muhammed Ali Pasha Palace","El Manial"));
+        places.add(new Place(R.drawable.t4, "The Egyption museum","El tahrir"));
+        places.add(new Place(R.drawable.t2, "Aesha Fahmy Palace","El Zamalek"));
+        places.add(new Place(R.drawable.t3, "Salah El Din Citadel","El Moqatam"));
+        places.add(new Place(R.drawable.t1, "Cairo Tower","El Zamalek"));
+        places.add(new Place(R.drawable.t2, "Al Hakem ","El Moe'eez st."));
 
         Cov_adapter  adapter = new Cov_adapter(places,this);
         RecyclerView.LayoutManager lm= new LinearLayoutManager(this);
